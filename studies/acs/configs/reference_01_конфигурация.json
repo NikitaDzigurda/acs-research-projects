@@ -1,0 +1,80 @@
+{
+  "audit": {
+    "n": 906,
+    "deaths": 43,
+    "survivors": 863,
+    "prevalence": 0.04746136865342163,
+    "groups": 892,
+    "repeated_groups": 13,
+    "raw_nonclinical_rows_excluded": 12,
+    "curated_survivors_with_raw_codes_other_than_1": 13,
+    "tag_values_differing_between_versions": 93,
+    "exact_feature_duplicates": 0,
+    "raw_ef_invalid": 1
+  },
+  "features": [
+    "age",
+    "male",
+    "mi",
+    "st_elevation",
+    "tag",
+    "ms",
+    "killip",
+    "low_ef",
+    "crp",
+    "ckd",
+    "pre_tlt",
+    "af",
+    "pci",
+    "grace",
+    "diabetes"
+  ],
+  "continuous": [
+    "age",
+    "tag",
+    "crp",
+    "grace"
+  ],
+  "categorical": [
+    "male",
+    "mi",
+    "st_elevation",
+    "ms",
+    "killip",
+    "low_ef",
+    "ckd",
+    "pre_tlt",
+    "af",
+    "pci",
+    "diabetes"
+  ],
+  "labels": {
+    "age": "Возраст, лет",
+    "male": "Мужской пол",
+    "mi": "Инфаркт миокарда",
+    "st_elevation": "ОКС с подъёмом ST",
+    "tag": "Максимальный ТАГ, ммоль/л",
+    "ms": "Метаболический синдром",
+    "killip": "Класс Killip",
+    "low_ef": "ФВ ≤45%",
+    "crp": "СРБ, мг/л",
+    "ckd": "Хроническая болезнь почек",
+    "pre_tlt": "Догоспитальная ТЛТ",
+    "af": "Фибрилляция предсердий",
+    "pci": "Интервенционное лечение",
+    "grace": "GRACE, баллы",
+    "diabetes": "Сахарный диабет"
+  },
+  "data_sha256": "f63bf41074c8fa810a58748d901dd8f40b0b274ef64a0b4167a975198a78b5ae",
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "sklearn": "1.9.0",
+    "optuna": "5.0.0",
+    "shap": "0.51.0",
+    "catboost": "1.2.10",
+    "xgboost": "3.2.0",
+    "nbclient": "0.10.4"
+  },
+  "snapshot_role": "Reference run before repository reorganisation; not newly retrained."
+}

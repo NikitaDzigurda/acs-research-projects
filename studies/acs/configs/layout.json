@@ -1,0 +1,6 @@
+{
+  "study": "acs",
+  "inputs": "data/private/inputs",
+  "reference": "artifacts/private/reference",
+  "default_run": "artifacts/private/runs/current"
+}

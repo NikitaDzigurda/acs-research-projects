@@ -1,0 +1,30 @@
+{
+  "run_id": "oks_no_crp_indicator_v2_d138be90f9f1",
+  "family": "CatBoost",
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "sklearn": "1.9.0",
+    "optuna": "5.0.0",
+    "shap": "0.51.0",
+    "catboost": "1.2.10",
+    "xgboost": "3.2.0",
+    "nbclient": "0.10.4"
+  },
+  "model_sha256": "00f5c07e5cd55f9a4594d24fb2c979ee5f6334e214e4579d7676004e0bd07b5b",
+  "data_sha256": "f63bf41074c8fa810a58748d901dd8f40b0b274ef64a0b4167a975198a78b5ae",
+  "n_explained": 906,
+  "input_cohort_n": 906,
+  "classifier_training_n": 215,
+  "background_n": 100,
+  "background_description": "случайный реальный фон из 100 наблюдений, seed=2026",
+  "seed": 2026,
+  "scale": "log-odds смерти",
+  "perturbation": "interventional, real background n=100, model_output=raw",
+  "max_additivity_error": 6.511137662368327e-08,
+  "tolerance": 1e-05,
+  "population": "all real input cohort records; classifier training subset is specified separately",
+  "grouping": "sums of transformed one-hot contributions; not Shapley for a grouped game",
+  "examples_rule": "first death; first survival; closest to threshold; first full-cohort FN and FP if present",
+  "snapshot_role": "Reference run before repository reorganisation; not newly retrained."
+}

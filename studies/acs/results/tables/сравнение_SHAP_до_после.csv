@@ -1,0 +1,31 @@
+key,label,rank_before,mean_abs_before,rank_after,mean_abs_after,rank_delta,old_run_id,new_run_id
+af,Фибрилляция предсердий,5,0.0051804863518277,6.0,0.12830075797534599,1.0,oks_v1_a0ff3f8f0c8d,oks_no_crp_indicator_v2_d138be90f9f1
+age,"Возраст, лет",4,0.0054373344008643,5.0,0.13900827548376804,1.0,oks_v1_a0ff3f8f0c8d,oks_no_crp_indicator_v2_d138be90f9f1
+ckd,Хроническая болезнь почек,7,0.0031067265710553,12.0,0.041108158406696765,5.0,oks_v1_a0ff3f8f0c8d,oks_no_crp_indicator_v2_d138be90f9f1
+crp,"СРБ, мг/л",3,0.0057064623384584,1.0,0.5883299882753698,-2.0,oks_v1_a0ff3f8f0c8d,oks_no_crp_indicator_v2_d138be90f9f1
+diabetes,Сахарный диабет,13,0.0014339362326021,9.0,0.07019769772398518,-4.0,oks_v1_a0ff3f8f0c8d,oks_no_crp_indicator_v2_d138be90f9f1
+grace,"GRACE, баллы",17,0.0006740224580584,11.0,0.052500175574343465,-6.0,oks_v1_a0ff3f8f0c8d,oks_no_crp_indicator_v2_d138be90f9f1
+killip,Класс Killip,1,0.0277185726855987,2.0,0.49817509020592826,1.0,oks_v1_a0ff3f8f0c8d,oks_no_crp_indicator_v2_d138be90f9f1
+low_ef,ФВ ≤45%,29,0.0,23.0,0.0,-6.0,oks_v1_a0ff3f8f0c8d,oks_no_crp_indicator_v2_d138be90f9f1
+male,Мужской пол,12,0.0015198322326738,16.0,0.021948354977312973,4.0,oks_v1_a0ff3f8f0c8d,oks_no_crp_indicator_v2_d138be90f9f1
+mi,Инфаркт миокарда,9,0.0024966626777604,13.0,0.034284987959469444,4.0,oks_v1_a0ff3f8f0c8d,oks_no_crp_indicator_v2_d138be90f9f1
+missing_af,Пропуск: Фибрилляция предсердий,27,0.0,20.0,0.0,-7.0,oks_v1_a0ff3f8f0c8d,oks_no_crp_indicator_v2_d138be90f9f1
+missing_age,"Пропуск: Возраст, лет",30,0.0,28.0,0.0,-2.0,oks_v1_a0ff3f8f0c8d,oks_no_crp_indicator_v2_d138be90f9f1
+missing_ckd,Пропуск: Хроническая болезнь почек,25,0.0,22.0,0.0,-3.0,oks_v1_a0ff3f8f0c8d,oks_no_crp_indicator_v2_d138be90f9f1
+missing_crp,"Пропуск: СРБ, мг/л",2,0.0248705510790201,,,,oks_v1_a0ff3f8f0c8d,oks_no_crp_indicator_v2_d138be90f9f1
+missing_diabetes,Пропуск: Сахарный диабет,18,0.000227738829898,18.0,2.5477308144826452e-06,0.0,oks_v1_a0ff3f8f0c8d,oks_no_crp_indicator_v2_d138be90f9f1
+missing_grace,"Пропуск: GRACE, баллы",10,0.0022189367057812,17.0,0.01805616507859376,7.0,oks_v1_a0ff3f8f0c8d,oks_no_crp_indicator_v2_d138be90f9f1
+missing_killip,Пропуск: Класс Killip,15,0.0010085238710076,7.0,0.11288699463476717,-8.0,oks_v1_a0ff3f8f0c8d,oks_no_crp_indicator_v2_d138be90f9f1
+missing_low_ef,Пропуск: ФВ ≤45%,16,0.0009025631721925,4.0,0.14288409305687796,-12.0,oks_v1_a0ff3f8f0c8d,oks_no_crp_indicator_v2_d138be90f9f1
+missing_male,Пропуск: Мужской пол,24,0.0,27.0,0.0,3.0,oks_v1_a0ff3f8f0c8d,oks_no_crp_indicator_v2_d138be90f9f1
+missing_mi,Пропуск: Инфаркт миокарда,23,0.0,26.0,0.0,3.0,oks_v1_a0ff3f8f0c8d,oks_no_crp_indicator_v2_d138be90f9f1
+missing_ms,Пропуск: Метаболический синдром,20,0.0001068551223194,24.0,0.0,4.0,oks_v1_a0ff3f8f0c8d,oks_no_crp_indicator_v2_d138be90f9f1
+missing_pci,Пропуск: Интервенционное лечение,28,0.0,19.0,0.0,-9.0,oks_v1_a0ff3f8f0c8d,oks_no_crp_indicator_v2_d138be90f9f1
+missing_pre_tlt,Пропуск: Догоспитальная ТЛТ,26,0.0,21.0,0.0,-5.0,oks_v1_a0ff3f8f0c8d,oks_no_crp_indicator_v2_d138be90f9f1
+missing_st_elevation,Пропуск: ОКС с подъёмом ST,21,0.0,25.0,0.0,4.0,oks_v1_a0ff3f8f0c8d,oks_no_crp_indicator_v2_d138be90f9f1
+missing_tag,"Пропуск: Максимальный ТАГ, ммоль/л",22,0.0,29.0,0.0,7.0,oks_v1_a0ff3f8f0c8d,oks_no_crp_indicator_v2_d138be90f9f1
+ms,Метаболический синдром,14,0.0010355713685066,10.0,0.05931127603488423,-4.0,oks_v1_a0ff3f8f0c8d,oks_no_crp_indicator_v2_d138be90f9f1
+pci,Интервенционное лечение,6,0.0046613084965594,8.0,0.08649698460435853,2.0,oks_v1_a0ff3f8f0c8d,oks_no_crp_indicator_v2_d138be90f9f1
+pre_tlt,Догоспитальная ТЛТ,19,0.0001947586203476,14.0,0.031623165629162384,-5.0,oks_v1_a0ff3f8f0c8d,oks_no_crp_indicator_v2_d138be90f9f1
+st_elevation,ОКС с подъёмом ST,8,0.0027903415017915,15.0,0.023363428548391855,7.0,oks_v1_a0ff3f8f0c8d,oks_no_crp_indicator_v2_d138be90f9f1
+tag,"Максимальный ТАГ, ммоль/л",11,0.0018985754779373,3.0,0.16576508965845838,-8.0,oks_v1_a0ff3f8f0c8d,oks_no_crp_indicator_v2_d138be90f9f1

@@ -1,0 +1,75 @@
+# Local clinical tables, patient-level predictions, models and executed notebooks
+studies/*/data/private/
+studies/*/artifacts/private/
+**/private/
+
+# Data are opt-in: only the reviewed aggregate CSV directories are published
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.xlsm
+*.parquet
+*.feather
+*.h5
+*.hdf5
+!studies/acs/results/tables/*.csv
+!studies/acs/results/archive/before_crp_indicator_removal/*.csv
+
+# Model files, search databases and per-patient arrays
+*.joblib
+*.pkl
+*.pickle
+*.cbm
+*.ubj
+*.npy
+*.npz
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.sqlite-wal
+*.sqlite-shm
+
+# Report documents and their extracted text are not repository content
+*.pdf
+*.doc
+*.docx
+*.rtf
+*.odt
+*.txt
+!requirements.txt
+*Отчет*
+*Отчёт*
+*отчет*
+*отчёт*
+*извлеченный_текст*
+
+# Notebook checkpoints, environments and generated caches
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.matplotlib/
+.venv/
+venv/
+env/
+*.egg-info/
+build/
+dist/
+catboost_info/
+*.log
+
+# Credentials and machine-specific settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

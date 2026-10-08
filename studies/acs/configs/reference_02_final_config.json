@@ -1,0 +1,120 @@
+{
+  "run_id": "oks_no_crp_indicator_v2_d138be90f9f1",
+  "selection": {
+    "family": "CatBoost",
+    "config": {
+      "strategy": "stratified_4to1",
+      "indicators": true,
+      "params": {
+        "iterations": 200,
+        "depth": 6,
+        "learning_rate": 0.04849866187746487,
+        "l2_leaf_reg": 35.613541610725896
+      }
+    },
+    "inner_AP": 0.7980950650309513,
+    "inner_Brier": 0.028418632206398956,
+    "threshold": 0.4124606970892672,
+    "study_name": "oks_no_crp_indicator_v2_d138be90f9f1_final_CatBoost",
+    "best_trial": 45,
+    "completed": 50
+  },
+  "all_families": [
+    {
+      "family": "LR",
+      "config": {
+        "strategy": "all_real",
+        "indicators": true,
+        "params": {
+          "C": 1.9113524065307763
+        }
+      },
+      "inner_AP": 0.4607646643168541,
+      "inner_Brier": 0.03506637454221928,
+      "threshold": 0.08050003920219466,
+      "study_name": "oks_no_crp_indicator_v2_d138be90f9f1_final_LR",
+      "best_trial": 40,
+      "completed": 50
+    },
+    {
+      "family": "RF",
+      "config": {
+        "strategy": "class_weights",
+        "indicators": false,
+        "params": {
+          "n_estimators": 800,
+          "max_depth": 7,
+          "min_samples_leaf": 4,
+          "max_features": 0.5
+        }
+      },
+      "inner_AP": 0.7341008068545923,
+      "inner_Brier": 0.04124389073471913,
+      "threshold": 0.26938535348724274,
+      "study_name": "oks_no_crp_indicator_v2_d138be90f9f1_final_RF",
+      "best_trial": 25,
+      "completed": 50
+    },
+    {
+      "family": "CatBoost",
+      "config": {
+        "strategy": "stratified_4to1",
+        "indicators": true,
+        "params": {
+          "iterations": 200,
+          "depth": 6,
+          "learning_rate": 0.04849866187746487,
+          "l2_leaf_reg": 35.613541610725896
+        }
+      },
+      "inner_AP": 0.7980950650309513,
+      "inner_Brier": 0.028418632206398956,
+      "threshold": 0.4124606970892672,
+      "study_name": "oks_no_crp_indicator_v2_d138be90f9f1_final_CatBoost",
+      "best_trial": 45,
+      "completed": 50
+    },
+    {
+      "family": "XGBoost",
+      "config": {
+        "strategy": "class_weights",
+        "indicators": false,
+        "params": {
+          "n_estimators": 600,
+          "max_depth": 2,
+          "learning_rate": 0.03049854771899052,
+          "min_child_weight": 3.138618703770561,
+          "subsample": 0.9908665130694234,
+          "colsample_bytree": 0.9536204166127499,
+          "reg_lambda": 0.022224007408708408,
+          "reg_alpha": 3.8321866144814796
+        }
+      },
+      "inner_AP": 0.7735187490737404,
+      "inner_Brier": 0.030151154268207147,
+      "threshold": 0.04764475300908089,
+      "study_name": "oks_no_crp_indicator_v2_d138be90f9f1_final_XGBoost",
+      "best_trial": 47,
+      "completed": 50
+    }
+  ],
+  "features": [
+    "age",
+    "male",
+    "mi",
+    "st_elevation",
+    "tag",
+    "ms",
+    "killip",
+    "low_ef",
+    "crp",
+    "ckd",
+    "pre_tlt",
+    "af",
+    "pci",
+    "grace",
+    "diabetes"
+  ],
+  "interpretation": "full-cohort fitted artifact; independent quality belongs to nested selector",
+  "snapshot_role": "Reference run before repository reorganisation; not newly retrained."
+}

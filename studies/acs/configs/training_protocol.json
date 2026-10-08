@@ -1,0 +1,63 @@
+{
+  "version": "acs_repository_no_crp_indicator_v1",
+  "seed": 2026,
+  "outer_folds": 3,
+  "outer_repeats": 3,
+  "inner_folds": 3,
+  "main_trials": 50,
+  "conditional_trials": 20,
+  "families": [
+    "LR",
+    "RF",
+    "CatBoost",
+    "XGBoost"
+  ],
+  "imbalance": [
+    "all_real",
+    "class_weights",
+    "stratified_4to1"
+  ],
+  "missing_indicator": [
+    false,
+    true
+  ],
+  "feature_rule": "full_15_features_fixed",
+  "selection": "max mean inner AP; ties within 1e-6: min Brier, then LR RF CatBoost XGBoost",
+  "threshold": "max inner OOF balanced accuracy; ties greater sensitivity",
+  "baseline": {
+    "LR": {
+      "C": 1.0
+    },
+    "RF": {
+      "n_estimators": 500,
+      "max_depth": 5,
+      "min_samples_leaf": 1,
+      "max_features": "sqrt"
+    },
+    "CatBoost": {
+      "iterations": 300,
+      "depth": 4,
+      "learning_rate": 0.05,
+      "l2_leaf_reg": 3.0
+    },
+    "XGBoost": {
+      "n_estimators": 300,
+      "max_depth": 3,
+      "learning_rate": 0.05,
+      "min_child_weight": 1.0,
+      "subsample": 1.0,
+      "colsample_bytree": 1.0,
+      "reg_lambda": 1.0,
+      "reg_alpha": 0.0
+    }
+  },
+  "spaces": {
+    "LR": "C log 1e-3..100",
+    "RF": "n_estimators 200..800 step100; depth2..8; leaf1,2,4,8,16; features sqrt,0.5,1.0",
+    "CatBoost": "iterations100..800 step100; depth2..6; lr log.01...2; l2 log.01..100",
+    "XGBoost": "estimators100..800 step100; depth1..5; lr log.01...2; child1..20; sample/col .6..1; lambda log.001..100; alpha0..5"
+  },
+  "excluded_missing_indicators": [
+    "crp"
+  ]
+}

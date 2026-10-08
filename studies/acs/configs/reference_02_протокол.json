@@ -1,0 +1,78 @@
+{
+  "version": "oks_no_crp_indicator_v2",
+  "seed": 2026,
+  "outer_folds": 3,
+  "outer_repeats": 3,
+  "inner_folds": 3,
+  "main_trials": 50,
+  "conditional_trials": 20,
+  "families": [
+    "LR",
+    "RF",
+    "CatBoost",
+    "XGBoost"
+  ],
+  "imbalance": [
+    "all_real",
+    "class_weights",
+    "stratified_4to1"
+  ],
+  "missing_indicator": [
+    false,
+    true
+  ],
+  "feature_rule": "full_15_features_fixed",
+  "selection": "max mean inner AP; ties within 1e-6: min Brier, then LR RF CatBoost XGBoost",
+  "threshold": "max inner OOF balanced accuracy; ties greater sensitivity",
+  "baseline": {
+    "LR": {
+      "C": 1.0
+    },
+    "RF": {
+      "n_estimators": 500,
+      "max_depth": 5,
+      "min_samples_leaf": 1,
+      "max_features": "sqrt"
+    },
+    "CatBoost": {
+      "iterations": 300,
+      "depth": 4,
+      "learning_rate": 0.05,
+      "l2_leaf_reg": 3.0
+    },
+    "XGBoost": {
+      "n_estimators": 300,
+      "max_depth": 3,
+      "learning_rate": 0.05,
+      "min_child_weight": 1.0,
+      "subsample": 1.0,
+      "colsample_bytree": 1.0,
+      "reg_lambda": 1.0,
+      "reg_alpha": 0.0
+    }
+  },
+  "data_sha256": "f63bf41074c8fa810a58748d901dd8f40b0b274ef64a0b4167a975198a78b5ae",
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "sklearn": "1.9.0",
+    "optuna": "5.0.0",
+    "shap": "0.51.0",
+    "catboost": "1.2.10",
+    "xgboost": "3.2.0",
+    "nbclient": "0.10.4"
+  },
+  "spaces": {
+    "LR": "C log 1e-3..100",
+    "RF": "n_estimators 200..800 step100; depth2..8; leaf1,2,4,8,16; features sqrt,0.5,1.0",
+    "CatBoost": "iterations100..800 step100; depth2..6; lr log.01...2; l2 log.01..100",
+    "XGBoost": "estimators100..800 step100; depth1..5; lr log.01...2; child1..20; sample/col .6..1; lambda log.001..100; alpha0..5"
+  },
+  "code_sha256": "1e45d679ae88ce8bb7ef13ab1bfe6b2a488b1718fe573a9a6f1a024b7fc755e5",
+  "excluded_missing_indicators": [
+    "crp"
+  ],
+  "parent_run_id": "oks_v1_a0ff3f8f0c8d",
+  "run_id": "oks_no_crp_indicator_v2_d138be90f9f1",
+  "snapshot_role": "Reference run before repository reorganisation; not newly retrained."
+}
